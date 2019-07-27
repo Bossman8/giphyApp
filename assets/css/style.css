@@ -1,13 +1,68 @@
 #buttonsDiv {
-    background-color: aqua
-}
-#gifDiv {
-    background-color: aquamarine;
+    padding: 20px;
     float: left;
-    width: 50%;
+    clear: left;
 }
 #searchDiv {
-    background-color: lightgray;
     float: right;
-    width: 50%
+    clear: right;
+    max-width: 40%;
+}
+#gifDiv {
+    color: navy;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+#tv {
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+}
+button{
+    background-color: navy;
+    color: white;
+    padding: 3%;
+    border-radius: 45% !important;
+}
+body{
+    background-color: lightgray !important;
+    width: 100% !important;
+    
+    
+}
+@media only screen and (max-width: 1200px) {
+    #gifDiv{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 35% 35% 35% 35% 35% 35% 35% 35%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #gifDiv{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 18% 20% 18% 20% 18% 20%;
+        grid-template-rows: 35% 35% 35% 35% 35% 35% 35% 35%;
+    }
+
+}
+@media only screen and (max-width: 990px) {
+    #gifDiv{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 30% 30% 30% 30%;
+        grid-template-rows: 35% 35% 35% 35% 35% 35% 35% 35%;
+    }
+
+}
+@media only screen and (max-width: 770px) {
+    #gifDiv{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 40% 30% 40% 30%;
+        grid-template-rows: 35% 35% 35% 35% 35% 35% 35% 35%;
+    }
+
 }
