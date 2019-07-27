@@ -26,12 +26,10 @@ function displayGiphyinfo() {
         $("#gifDiv").append("<p>Rating : "+response.data[i].rating+"</p>");
         }
         $(".gifs").on("click", function() {
-            // debugger;
-            // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+            debugger;
+            
             var state = $(this).attr("data-state");
-            // If the clicked image's state is still, update its src attribute to what its data-animate value is.
-            // Then, set the image's data-state to animate
-            // Else set src to the data-still value
+            
             if (state === "still") {
                 $(this).attr("src", $(this).attr("data-animate"));
                 $(this).attr("data-state", "animate");
@@ -81,7 +79,6 @@ function renderButtons() {
 $("#addSeries").on("click", function (event) {
     event.preventDefault();
 
-    // if ($("#inputSeries").lenght > 0){
     var movie = $("#inputSeries").val().trim();
 
     series.push(movie);
