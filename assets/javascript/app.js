@@ -2,7 +2,7 @@ var series = ["Friends", "That 70's Show", "How I Met Your Mother", "Last Man on
 
 function displayGiphyinfo() {
     var gif = $(this).attr("data-name")
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=uFwwzNchSZ6TyeldPwQzB79HgmZKgRhU&q=" + gif + "&limit=10&offset=0&lang=en"
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=uFwwzNchSZ6TyeldPwQzB79HgmZKgRhU&q=" + gif + "&limit=12&offset=0&lang=en&"
     
     $.ajax({
         url: queryURL,
